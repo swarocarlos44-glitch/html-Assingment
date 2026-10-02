@@ -1,0 +1,96 @@
+<html>
+<head> <style>
+        body{
+            
+            color: hsl(150, 9%, 4%);
+            text-align: center;
+            margin: auto;
+        }
+        h1{
+            color: rgb(6, 85, 39);
+            background-color: rgb(8, 55, 148);
+            text-align: center;
+            margin: 20 25%;
+        }
+        label{
+            color: cyan;
+            text-align: justify;
+
+        }
+        table{
+            background: rgb(132, 102, 32);
+        }
+    </style> 
+</head>   
+    <title>Patient's registration</title>
+
+<body>
+<table border="5">
+    <caption><b>PATIENT'S REGISTRATION</b></caption>
+    <tr>
+        <th>Patient's Details</th>
+        <th>Information</th>
+    </tr>
+
+
+<form action="register.php" method="post">
+    <tr>
+    <th><label for="full_name">Full Name:</label></th>
+    <th><input type="text" id="full_name" name="full_name" required><br><br></th>
+    </tr>
+    
+    
+    <tr> 
+    <th><label for="age">Age:</label></th>
+    <th><input type="number" id="age" name="age" required><br><br></th>
+    </tr>
+
+    <tr>
+    <th><label for="gender">Gender:</label></th>
+    <th><input type="radio" id="gender" name="gender"required >Female 
+    <input type="radio" id="gender" name="gender" required> Male<br><br></th>
+    
+    <tr>
+    <th><label for="id_number">ID Number:</label></th>
+    <th><input type="text" id="id_number" name="id_number" required><br><br></th>
+    </tr>
+
+    <tr>
+    <th><label for="patient_id">Patient's ID:</label></th>
+    <th><input type="text" id="patient_id" name="patient_id" required><br><br></th>
+    </tr>
+       
+   <th> <label for="phone_number">Phone Number:</label></th>
+   <th> <input type="text" id="phone_number" name="phone_number" required><br></br></th>
+    </tr>
+   <tr><th> <label>Any disability?:</label></th>
+<th><input type="radio" id="disability_yes" name="health_status" value="yes" required> Yes
+<input type="radio" id="disability_no" name="health_status" value="no" required> No <br><br></th>
+</tr>
+    
+  <tr><th> <label for="describe_disability">Describe disability if any:</label></th>
+    <th><input type="text" id="describe_disability" name="describe_disability"><br><br><th>
+    </tr>
+    
+    <tr><th><label for="address">Address:</label></th>
+   <th> <input type="text" id="address" name="address" required><br><br></th>
+   </tr>
+    
+   <tr><th> <label>Marital Status:</label></th>
+  <th>  <input type="radio" id="marital_status" name="marital_status" required> Single
+    <input type="radio" name="marital_status" required> Married
+    <input type="radio" name="marital_status" required> Situationship<br><br></th>
+   </tr>
+    
+  <tr><th> <label for="next_of_kin">Next of Kin:</label></th>
+   <th> <input type="text" id="next_of_kin" name="next_of_kin" required><br><br></th>
+   </tr>
+    
+   <tr><th> <label for="weight">Weight:</label></th>
+  <th> <input type="number" id="weight" name="weight" required><br><br></th>
+    </tr>
+   <tr><th> <input type="submit" value="Submit"></th></tr>
+</form>
+</table>
+</body>
+</html>
